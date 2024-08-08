@@ -38,7 +38,6 @@ export default function Navbar() {
         </div> */}
 
         <div className="flex gap-base">
-          <Link className={buttonVariants({variant:"ghost"})} href="/questions">Questions</Link>
           <LoginButton />
 
           <ModeToggle />
