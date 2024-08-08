@@ -27,7 +27,7 @@ export default function Page({ params }) {
                             <CodeArea />
                         </ResizablePanel>
                         <ResizableHandle withHandle />
-                        <ResizablePanel defaultSize={75} minSize={10}>
+                        <ResizablePanel defaultSize={10} minSize={10}>
                             <Terminal />
                         </ResizablePanel>
                     </ResizablePanelGroup>

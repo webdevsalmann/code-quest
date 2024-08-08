@@ -7,6 +7,7 @@ import NavigationLinks from './navigation-links';
 import { cn } from '@/lib/utils';
 import { ModeToggle } from '@/components/ui/mode-toggle';
 import { Button, buttonVariants } from '@/components/ui/button';
+import LoginButton from './login-button';
 
 export default function Navbar() {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
@@ -38,9 +39,9 @@ export default function Navbar() {
 
         <div className="flex gap-base">
           <Link className={buttonVariants({variant:"ghost"})} href="/questions">Questions</Link>
-          <Button>Sign In</Button>
+          <LoginButton />
 
-          <ModeToggle className="hidden md:block justify-self-end" />
+          <ModeToggle />
         </div>
       </nav>
     </div>
